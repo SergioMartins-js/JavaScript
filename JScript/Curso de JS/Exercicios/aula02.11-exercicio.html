@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>    </title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <button id="enviarDados">Enviar</button>
+        <script>
+            for(let i=0; i<3;i++){
+                document.body.innerHTML += " <input type='text' class='entra-dados'>"
+            }
+            
+            let vetor = [];
+
+            const valores = document.querySelectorAll(".entra-dados");
+            const button = document.querySelector("#enviarDados");
+
+
+            button.addEventListener("click",()=>{
+                [...valores].forEach((element)=>{
+                    vetor.push(parseFloat(element.value));
+                });
+            
+            function menorValor(vetor){
+                let menor = vetor[0];
+                for(let i=0;i<vetor.length;i++){
+                    if(vetor[i]<menor){
+                        menor = vetor[i]
+                    }
+                }
+                return menor;
+            }
+
+            let menor = menorValor([6,5,4,7]);
+            
+
+            
+        </script>
+    </body>
+
+</html>

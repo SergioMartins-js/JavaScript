@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>     </title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>    </h1>
+        <button onclick="soma()">+</button>
+        <button onclick="sub()">-</button>
+        <button onclick="mult()">*</button>
+        <button onclick="div()">/</button>
+        <button onclick="limpar()">Limpar Tela</button>
+        <div id='output'></div>
+        <script>
+            var n1 = parseInt(prompt("Digite um número: "));
+            escreve();
+
+            function escreve(){
+                var output = document.querySelector('#output');
+                output.innerHTML = n1; 
+            }
+            
+            function soma(){
+                var nsoma = parseFloat(prompt("Digite um número: "));
+                n1 = n1 + nsoma;                                
+                escreve();
+            }
+            function sub(){
+                var nsoma = parseFloat(prompt("Digite um número: "));
+                n1 = n1 - nsoma;                                
+                escreve();
+            }
+            function mult(){
+                var nsoma = parseFloat(prompt("Digite um número: "));
+                n1 = n1 * nsoma;                                
+                escreve();
+            }
+            function div(){
+                var nsoma = parseFloat(prompt("Digite um número: "));
+                n1 = n1 / nsoma;                                
+                escreve();
+            }
+            function limpar(){
+                n1 = '';                                
+                escreve();
+            }
+            
+                    
+        </script>
+    </body>
+</html>

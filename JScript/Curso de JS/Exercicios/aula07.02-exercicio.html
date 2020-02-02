@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Logica de Programação Javascript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Lógica de programação com Javascript</h1>
+        
+        <div id="output"></div>
+    </body>
+    
+    <script>
+
+        function Endereco(dados){
+            this.logradouro = dados.logradouro || '';
+            this.n = dados.n || 0;
+            this.complemento = dados.complemento;
+            this.cidade = dados.cidade;
+            this.estado = dados.estado;
+            this.cep = dados.cep;
+
+        }
+
+       var alunos = [
+           {nome: 'daniel', id: 112233, endereco: new Endereco({logradouro:'rua 15', n:5, complemento: 'ap 18', cidade:'ocidental', estado:'GO',cep:'72880-026'})},
+           {nome: 'josé', id: 112244, endereco: new Endereco({logradouro:'rua 16', n:52, complemento: 'ap 156', cidade:'ocidental', estado:'GO',cep:'72880-027'})},
+           {nome: 'joão', id: 113344, endereco: new Endereco({logradouro:'rua 17', n:53, complemento: 'ap 157', cidade:'ocidental', estado:'GO',cep:'72880-028'})},
+           {nome: 'maria', id: 114444, endereco: new Endereco({logradouro:'rua 18', n:54, complemento: 'ap 155', cidade:'ocidental', estado:'GO',cep:'72880-029'})},
+           {nome: 'ana', id: 114555, endereco: new Endereco({logradouro:'rua 19', n:55, complemento: 'ap 151', cidade:'ocidental', estado:'GO',cep:'72880-036'})},
+       ]
+       var msg = "";
+       var enderecos = [];
+       for (let i = 0; i < alunos.length; i++){
+           enderecos[i] = alunos[i].endereco;
+       }
+
+       console.log(enderecos);
+        
+        for(let i = 0; i < enderecos.length; i++){
+            var endereco = enderecos[i];
+            for(prop in endereco){
+                console.log(prop);
+                console.log(endereco[prop])
+                msg += 'i: '+ i +', ' + prop +  ': '+endereco[prop]+ '<br>'
+            }
+            msg += '<hr>'
+        }
+        
+        
+        
+        
+        
+        
+        
+        document.querySelector('#output').innerHTML = msg;
+        
+        
+    </script>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Loteria</title>
+        <meta charset="utf-8">
+
+        <style>
+
+            body{
+                font-family: sans-serif;
+
+            }
+
+        </style>
+    </head>
+    
+    <body>
+        <h1>Loteria</h1>
+        <div id="output"></div>
+        <script>
+        function sortear(){
+            return Math.floor(Math.random() * 60);
+        }
+
+        var sorteados = obtemnumerossortidos();
+
+        var output = document.querySelector('#output');
+        var msg = '';
+
+        msg += '<p>Números Sorteados: </p>';
+        msg += '<p>' + sorteados.join(', ') + '</p>'
+
+        var meusNumeros = [4, 12, 22, 23, 46, 51];
+        
+        for(var i = 0; i < meusNumeros.length; i++){
+            msg += '<p>' + meusNumeros[i] + ': ';
+            msg += (sorteados.indexOf(meusNumeros[i]) === -1) ? 'Errou' : 'Acertou'
+            msg += '<p>';
+        }
+
+            output.innerHTML = msg;
+
+        function obtemnumerossortidos(){
+            var sorteados = [];
+
+            while(sorteados.length < 6){
+            var sorteado = sortear();
+            if(sorteados.indexOf(sorteado) === -1){
+                sorteados[sorteados.length] = sorteado;
+            }
+
+            console.log(sorteados.length, sorteado);
+        }
+            return sorteados;
+        }
+        
+        
+
+        console.log(sorteados);
+
+        </script>
+    </body>
+
+</html>
