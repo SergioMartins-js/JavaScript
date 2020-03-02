@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title></title>
+
+            <link rel="stylesheet" type="text/css" href="Estilo.css">
+            <script type="text/javascript" src="Funcoes.js"></script>
+    </head>    
+        <body>
+          <!--Contraste-->
+          
+          <h1>
+            <button><li><a href="#altocontraste" id="altocontraste" accesskey="3" onclick="window.toggleContrast()" onkeydown="window.toggleContrast()">Contraste</a></li></button>
+          </h1>
+        
+          <!--Contraste-->
+
+            <div class="container" >
+              <a class="links" id="paracadastro"></a>
+              <a class="links" id="paralogin"></a>
+               
+              <div class="content">      
+                <!--FORMULÁRIO DE LOGIN-->
+                <div id="login">
+                  <form method="post" action=""> 
+                    <h1>Login</h1> 
+                    <p> 
+                      <label for="nome_login">Seu nome</label>
+                      <input id="nome_login" name="nome_login" required="required" type="text" placeholder="ex. contato@htmlecsspro.com"/>
+                    </p>
+                     
+                    <p> 
+                      <label for="email_login">Seu e-mail</label>
+                      <input id="email_login" name="email_login" required="required" type="password" placeholder="ex. senha" /> 
+                    </p>
+                     
+                    <p> 
+                      <input type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
+                      <label for="manterlogado">Manter-me logado</label>
+                    </p>
+                     
+                    <p> 
+                      <input type="submit" value="Logar" /> 
+                    </p>
+                     
+                    <p class="link">
+                      Ainda não tem conta?
+                      <a href="#paracadastro">Cadastre-se</a>
+                    </p>
+                  </form>
+                </div>
+           
+                <!--FORMULÁRIO DE CADASTRO-->
+                <div id="cadastro">
+                  <form method="post" action=""> 
+
+                     
+                    <h1>Informações Pessoais</h1>
+                    <p>
+                        Nome: <input type="text" name="tNome" id= "cNome" size="30" maxlength="30" placeholder="Nome Completo" >
+                        E-mail: <input type="email" name="tEmail" id="cEmail" size="20" maxlength="40" placeholder="E-mail">
+                        CPF: <input type="text" name="tCPF" id="cCPF" size="11" maxlength="11" placeholder="CPF" >
+                    </p>
+
+                    <h1>Sexo</h1>
+
+                        <input type="radio" name="tSexo" id="cMasc"> <label for="cMasc">Masculino</label><br>
+                        <input type="radio" name="tSexo" id="cFem"> <label for="cFem">Feminino</label> <br>
+                        <input type="radio" name="tSexo" id="cInd"> <label for="cInd">Indefinido</label>
+
+                        <h1>Endereço: </h1>
+                    <p>
+                        Número de Telefone: <input type="tel" name="tTell" id="cTell" size="10" maxlength="10" placeholder="(00) 000000000">
+                        Endereço: <input type="text" name="tEnd" id="cEnd" size="16" maxlength="20" placeholder="Ex: Quadra: 00 Rua: 00">
+                        Cidade: <input type="text" name="tCid" id="cCid" size="15" maxlength="20" placeholder="Ex: Cidade Ocidental" >
+                        Estado: <input type="text" name="tEst" id="cEst" size="15" maxlength="20" placeholder="Ex: Goiás">
+                        CEP: <input type="Text" name="tCPF" id="cCPF" size="8" maxlength="8" placeholder="Ex: 72880000">
+                    </p>
+
+                    <h1>Tipagem Sanguínea: <input type="text" name="tSangue" id="cSangue" size="3" maxlength="3"></h1>
+                    
+                        <b>Doador de Sangue?</b>
+                        <input type="radio" name="tSang" id="cSim"> <label for="cSim">Sim</label>
+                        <input type="radio" name="tSang" id="cNao"> <label for="cNao">Não</label>
+                        
+                        <b>Doador de Órgãos?</b>
+                        <input type="radio" name="tOrg" id="cYes"> <label for="cYes">Sim</label>
+                        <input type="radio" name="tOrg" id="cNo"> <label for="cNo">Não</label>
+                    <br>
+                    <br>  
+                    <p> 
+                      <label for="email_cad">Seu e-mail</label>
+                      <input id="email_cad" name="email_cad" required="required" type="email" placeholder="contato@htmlecsspro.com"/> 
+                    </p>
+                    
+                    <p> 
+                      <label for="senha_cad">Sua senha</label>
+                      <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="ex. 1234"/>
+                    </p>
+                     
+                    <p> 
+                      <input type="submit" value="Cadastrar"/> 
+                    </p>
+                     
+                    <p class="link">  
+                      Já tem conta?
+                      <a href="#paralogin"> Ir para Login </a>
+                    </p>
+                  </form>
+                </div>
+              </div>
+            </div>  
+          </body>          
+            
+    
+</html>
