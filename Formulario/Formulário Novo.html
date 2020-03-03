@@ -9,10 +9,10 @@
         <body>
           <!--Contraste-->
           
-          <h1>
-            <button><li><a href="#altocontraste" id="altocontraste" accesskey="3" onclick="window.toggleContrast()" onkeydown="window.toggleContrast()">Contraste</a></li></button>
+          <h1 id="Fonte">
+            <button id="Boron" onclick="window.toggleContrast()" style="cursor: pointer;"><a href="#altocontraste" id="altocontraste" accesskey="3" onclick="window.toggleContrast()" onkeydown="window.toggleContrast()">Contraste</a></button>
           </h1>
-        
+          
           <!--Contraste-->
 
             <div class="container" >
@@ -57,16 +57,16 @@
                      
                     <h1>Informações Pessoais</h1>
                     <p>
-                        Nome: <input type="text" name="tNome" id= "cNome" size="30" maxlength="30" placeholder="Nome Completo" >
-                        E-mail: <input type="email" name="tEmail" id="cEmail" size="20" maxlength="40" placeholder="E-mail">
-                        CPF: <input type="text" name="tCPF" id="cCPF" size="11" maxlength="11" placeholder="CPF" >
+                        Nome: <input type="text" name="tNome" id= "cNome" size="30" maxlength="30" placeholder="Nome Completo" ><br>
+                        Data de nacimento: <input type="date" name="tData" id="cData"><br>
+                        CPF: <input type="text" name="tCPF" id="cCPF" size="11" maxlength="11" placeholder="CPF" ><br>
                     </p>
-
+                    
                     <h1>Sexo</h1>
-
                         <input type="radio" name="tSexo" id="cMasc"> <label for="cMasc">Masculino</label><br>
                         <input type="radio" name="tSexo" id="cFem"> <label for="cFem">Feminino</label> <br>
                         <input type="radio" name="tSexo" id="cInd"> <label for="cInd">Indefinido</label>
+                     
 
                         <h1>Endereço: </h1>
                     <p>
@@ -76,21 +76,22 @@
                         Estado: <input type="text" name="tEst" id="cEst" size="15" maxlength="20" placeholder="Ex: Goiás">
                         CEP: <input type="Text" name="tCPF" id="cCPF" size="8" maxlength="8" placeholder="Ex: 72880000">
                     </p>
-
-                    <h1>Tipagem Sanguínea: <input type="text" name="tSangue" id="cSangue" size="3" maxlength="3"></h1>
                     
-                        <b>Doador de Sangue?</b>
-                        <input type="radio" name="tSang" id="cSim"> <label for="cSim">Sim</label>
-                        <input type="radio" name="tSang" id="cNao"> <label for="cNao">Não</label>
+                    <h1>Tipagem Sanguínea: <input type="text" name="tSangue" id="cSangue" size="1" maxlength="3"></h1>
+                    
+                        <b>Doador de Sangue?</b></br>
+                        <input type="radio" name="tSang" id="cSim"> <label for="cSim">Sim</label></br>
+                        <input type="radio" name="tSang" id="cNao"> <label for="cNao">Não</label></br>
                         
-                        <b>Doador de Órgãos?</b>
-                        <input type="radio" name="tOrg" id="cYes"> <label for="cYes">Sim</label>
-                        <input type="radio" name="tOrg" id="cNo"> <label for="cNo">Não</label>
+                        <b>Doador de Órgãos?</b></br>
+                        <input type="radio" name="tOrg" id="cYes"> <label for="cYes">Sim</label></br>
+                        <input type="radio" name="tOrg" id="cNo"> <label for="cNo">Não</label></br>
                     <br>
                     <br>  
+                    
                     <p> 
                       <label for="email_cad">Seu e-mail</label>
-                      <input id="email_cad" name="email_cad" required="required" type="email" placeholder="contato@htmlecsspro.com"/> 
+                      <input id="email_cad" name="email_cad" required="required" type="email" placeholder="serjao@berranteiro.com"/> 
                     </p>
                     
                     <p> 

@@ -316,3 +316,14 @@
 }
 
 /*Botao contraste*/
+
+#Boron {
+  
+  margin: 8px;
+  background-color: #39bfd7;
+  color: white;
+  padding: 8px;
+  border-radius: 50%;
+  
+}
+
